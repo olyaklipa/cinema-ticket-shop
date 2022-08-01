@@ -11,7 +11,7 @@
 * Retrieve cinema hall based on its id
 * Retrieve movie session based on its id
 * Display all movies
-* Display all cinema sessions
+* Display all cinema halls
 * User registration with password hashing (SHA-512 algorithm and salt)
 * User authentication
 * Create shopping cart for each user
