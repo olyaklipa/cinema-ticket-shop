@@ -2,7 +2,7 @@
 
 **Java web-application that simulates work of cinema cashbox. It supports user registration and authentication along with ticket ordering procedure.**
 
-### 🎞️️ Feature
+### 🎞️️ Features
 ---
 * Create new movie
 * Create new cinema hall
