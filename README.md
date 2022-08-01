@@ -21,7 +21,7 @@
 * Find all orders of a particular user
 * Fing available movie sessions for certain day
 
-###🎞️ Structure
+### 🎞️ Structure
 ---
 The project involves 7 models (see UML diagram)
 ![image-name](UML_diagram.jpg)
