@@ -5,6 +5,7 @@
 ### 🎞️️ Features
 ---
 This back-end application provides the following functionality via specified end-points:
+
 **Available for all customers:**
 1) New user registration **POST**: `/register` (the customer acquires the role 'USER' by default, the method body should contain 'email', 'password' and 'repeatPassword' attributes. The 'email' must contain '@' symbol and one or more symbols before and after it. The 'password' must be between 8 - 40 symbols length)
 2) Display all cinema halls **GET**: `/cinema-halls`
@@ -28,6 +29,7 @@ This back-end application provides the following functionality via specified end
 ### 🎞️ Structure
 ---
 The project involves 8 models (see UML diagram) and implies 3-tier architecture with dao, service and controller layers. In addition, it contains data transfer objects (dto) for requests and responses. The authorization was implemented via role based access. There are 'ADMIN' and 'USER' roles.
+
 ![image-name](UML_diagram.jpg)
 
 ### 🎞️ Technologies used
