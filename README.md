@@ -51,7 +51,7 @@ The project involves 8 models (see UML diagram) and implies 3-tier architecture 
 1. Create a new schema in your database
 2. In order to connect to the database, provide required properties in the file `src/main/resources/db.properties`
 3. Add configuration to your local Tomcat Server:
-   artifact to deploy: `cinema-ticket-shop:war`
+   artifact to deploy: `cinema-ticket-shop:war exploded`
    application context path: `/`
 4. When you run the program you will be prompted to a login page. By default the initial credantials are: username `admin@i.ua` password `admin123`. You can change them in `src/main/java/cinema/config/DataInitializer` class.
 5. In order to send POST, PUT or DELETE requests you can use Postman [link](https://www.postman.com/)
