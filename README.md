@@ -6,13 +6,13 @@
 ---
 This back-end application provides the following functionality via specified end-points:
 
-**Available for all customers:**
+**Available to all customers:**
 1) New user registration **POST**: `/register` (the customer acquires the role 'USER' by default, the method body should contain 'email', 'password' and 'repeatPassword' attributes. The 'email' must contain '@' symbol and one or more symbols before and after it. The 'password' must be between 8 - 40 symbols length)
 2) Display all cinema halls **GET**: `/cinema-halls`
 3) Display all movies **GET**: `/movies`
 4) Display all movie sessions for a certain movie available on a specific date **GET**: `/movie-sessions/available` (the method accepts 'movieId' and 'date' parameters)
 
-**Available only for ADMIN:**
+**Available only to ADMIN:**
 1) Add a new cinema hall **POST**: `/cinema-halls`(the method body should contain 'capacity' and 'description' attributes. The 'capacity' must be 10 or more and the 'description' length must not exceed 200 characters)
 2) Add a new movie **POST**: `/movies`(the method body should contain 'title' and 'description' attributes. The 'title' must be present and the 'description' length must not exceed 200 characters)
 3) Add a new movie session **POST**: `/movie-sessions`(the method body should contain 'movieId', 'cinemaHallId' and 'showTime' attributes. The 'movieId' and 'cinemaHallId' must be positive values and 'showTime' must be present)
@@ -20,7 +20,7 @@ This back-end application provides the following functionality via specified end
 5) Delete movie session by its id **DELETE**: `/movie-sessions/{id}`
 6) Dsplay customer by its email **GET**: `/users/by-email` (the method accepts 'email' parameter)
 
-**Available only for USER:**
+**Available only to USER:**
 1) Display all orders of the currently authenticated user **GET**: `/orders`
 2) Create a new order for the currently authenticated user **POST**: `/orders/complete`
 3) Add a ticket to the shopping cart of currenty authenticated user **PUT**: `/shopping-carts/movie-sessions` (the method accepts 'movieSessionId' parameter)
